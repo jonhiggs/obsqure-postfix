@@ -27,15 +27,16 @@ smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
 # See /usr/share/doc/postfix/TLS_README.gz in the postfix-doc package for
 # information on enabling SSL in the smtp client.
 
-myhostname = alpha.obsqure.net
-alias_maps = hash:/etc/postfix/aliases
 alias_database = hash:/etc/postfix/aliases
-virtual_alias_maps = hash:/etc/postfix/virtual_aliases
-myorigin = /etc/mailname
-mydestination = obsqure.net, obsqure.me, localhost.obsqure.net, localhost
-relayhost = 
-mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
-mailbox_size_limit = 104857600
-recipient_delimiter = +
+alias_maps = hash:/etc/postfix/aliases
 inet_interfaces = all
 inet_protocols = all
+mailbox_size_limit = 104857600		# 100MB
+message_size_limit =  52428800		# 50MB
+mydestination = obsqure.net, obsqure.me, localhost.obsqure.net, localhost
+myhostname = alpha.obsqure.net
+mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
+myorigin = /etc/mailname
+recipient_delimiter = +
+relayhost = 
+virtual_alias_maps = hash:/etc/postfix/virtual_aliases
