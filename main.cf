@@ -28,8 +28,9 @@ smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
 # information on enabling SSL in the smtp client.
 
 myhostname = alpha.obsqure.net
-alias_maps = hash:/etc/aliases
-alias_database = hash:/etc/aliases
+alias_maps = hash:/etc/postfix/aliases
+alias_database = hash:/etc/postfix/aliases
+virtual_alias_maps = hash:/etc/postfix/virtual_aliases
 myorigin = /etc/mailname
 mydestination = obsqure.net, obsqure.me, localhost.obsqure.net, localhost
 relayhost = 
