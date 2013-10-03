@@ -1,0 +1,5 @@
+user = postfix
+password = OpzBQlj96uZK5T
+hosts = db1.obsqure.net
+dbname = obsqure
+query = SELECT 1 FROM postfix_aliases WHERE from='%s'
