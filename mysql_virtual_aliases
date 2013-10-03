@@ -2,4 +2,4 @@ user = postfix
 password = OpzBQlj96uZK5T
 hosts = db1.obsqure.net
 dbname = obsqure
-query = SELECT 1 FROM postfix_aliases WHERE from='%s'
+query = SELECT postfix_aliases.to FROM postfix_aliases WHERE postfix_aliases.from = '%s';
