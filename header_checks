@@ -1,4 +1,4 @@
-/^To:.*@(obsqure.me)/               REPLACE To: <xxxxxx@$(1)>
-/^X-Resolved-to:(.*)/               REPLACE To:$(1)
-/Received:(.*)......@obsqure.me(.*) REPLACE Received:$(1)xxxxxx@obsqure.me$(2)
+/^To:.*@(obsqure.me)/                 REPLACE To: <xxxxxx@$(1)>
+/^X-Resolved-to:(.*)/                 REPLACE To:$(1)
+/Received:(.*)......@obsqure.me(.*)/  REPLACE Received:$(1)xxxxxx@obsqure.me$(2)
 
