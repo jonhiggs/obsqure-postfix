@@ -1,1 +1,2 @@
-/^Subject:(.*)/        REPLACE Subject:$(1) - $(myhostname)
+/^X-Resolved-to:(.*)/  REPLACE To:$(1)
+/^To: .*@obsqure.me/   IGNORE
