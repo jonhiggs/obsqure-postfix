@@ -1,3 +1,6 @@
 # See man 5 aliases for format
 postmaster    root
 root          jhiggs@eml.cc
+support       jhiggs@eml.cc
+ideas         support
+no-reply      /dev/null
