@@ -1,2 +1,1 @@
-/^X-Resolved-to:(.*)/  REPLACE To:$(1)
-/^To:.*@obsqure.me/    IGNORE
+/.{6}@obsqure.me/      REPLACE xxxxxx@obsqure.me
