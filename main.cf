@@ -40,3 +40,6 @@ myorigin = /etc/mailname
 recipient_delimiter = +
 relayhost = 
 virtual_alias_maps = mysql:/etc/postfix/mysql_virtual_aliases
+
+mime_header_checks = regexp:/etc/postfix/header_checks
+header_checks = regexp:/etc/postfix/header_checks
