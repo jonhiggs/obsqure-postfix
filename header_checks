@@ -1,2 +1,2 @@
 /^X-Resolved-to:(.*)/  REPLACE To:$(1)
-/^To: .*@obsqure.me/   IGNORE
+/^To:.*@obsqure.me/    IGNORE
