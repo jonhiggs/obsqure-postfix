@@ -1,1 +1,1 @@
-/^Subject:(.*)/        REPLACE Subject:$(1) - CHANGED
+/^Subject:(.*)/        REPLACE Subject:$(1) - $(myhostname)
