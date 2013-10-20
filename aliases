@@ -4,6 +4,7 @@ postmaster    root
 
 jon           jhiggs@eml.cc
 
+admin         jon
 support       jon
 ideas         support
 no-reply      /dev/null
